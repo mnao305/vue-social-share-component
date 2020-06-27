@@ -1,6 +1,10 @@
 <template>
   <div>
-    <social-share-button />
+    <social-share-button
+      url="https://google.com"
+      text="hogefugapiypiyo"
+      service="twitter"
+    />
   </div>
 </template>
 

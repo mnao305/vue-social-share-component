@@ -13,33 +13,56 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import { defineComponent, PropType } from '@vue/composition-api'
 
 export default defineComponent({
   name: 'SocialShareButton',
-  setup () {
+  props: {
+    url: {
+      type: String,
+      required: true,
+    },
+    text: {
+      type: String,
+      required: false,
+    },
+    service: {
+      type: String as PropType<'twitter' | 'facebook' | 'hatena' | 'pocket'>,
+      required: true,
+    },
+  },
+  setup (props) {
     const services = {
       twitter: {
         text: 'Tweet',
-        url: 'https://twitter.com/intent/tweet?url={url}&text={title}',
+        url: 'https://twitter.com/intent/tweet?url={url}&text={text}',
       },
-      facebook: {},
-      hatena: {},
-      pocket: {},
+      facebook: {
+        text: '',
+        url: '',
+      },
+      hatena: {
+        text: '',
+        url: '',
+      },
+      pocket: {
+        text: '',
+        url: '',
+      },
     }
 
-    const formatByArr = (serviceUrl: string, url: string, title?: string) => {
-      let text = serviceUrl.replace(/{url}/, encodeURIComponent(url))
-      if (title) text = text.replace(/{title}/, encodeURIComponent(title))
-      return text
+    const urlReplace = (serviceUrl: string, url: string, text?: string) => {
+      let replacedUrl = serviceUrl.replace(/{url}/, encodeURIComponent(url))
+      if (text) replacedUrl = replacedUrl.replace(/{text}/, encodeURIComponent(text))
+      return replacedUrl
     }
 
     const getUrl = () => {
-      return formatByArr(services.twitter.url, 'example.com', 'test')
+      return urlReplace(services[props.service].url, props.url, props.text)
     }
 
     const getText = () => {
-      return services.twitter.text
+      return services[props.service].text
     }
 
     return { getUrl, getText }
