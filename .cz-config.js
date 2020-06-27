@@ -1,4 +1,4 @@
-'use strict';
+'use strict'
 module.exports = {
   types: [
     {
@@ -88,4 +88,4 @@ module.exports = {
   },
   allowCustomScopes: true,
   allowBreakingChanges: ['feat', 'fix']
-};
+}

@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent,reactive, computed } from '@vue/composition-api'
+import { defineComponent, reactive, computed } from '@vue/composition-api'
 
 interface SampleData {
   counter: number;
@@ -39,33 +39,33 @@ export default defineComponent({
       initCounter: 5,
       message: {
         action: null,
-        amount: null,
-      },
-    });
-    const increment = (arg: Event | number) =>{
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      state.counter += amount;
-      state.message.action = 'incremented by';
-      state.message.amount = amount;
+        amount: null
+      }
+    })
+    const increment = (arg: Event | number) => {
+      const amount = (typeof arg !== 'number') ? 1 : arg
+      state.counter += amount
+      state.message.action = 'incremented by'
+      state.message.amount = amount
     }
-    const decrement = (arg: Event | number) =>{
-      const amount = (typeof arg !== 'number') ? 1 : arg;
-      state.counter -= amount;
-      state.message.action = 'decremented by';
-      state.message.amount = amount;
+    const decrement = (arg: Event | number) => {
+      const amount = (typeof arg !== 'number') ? 1 : arg
+      state.counter -= amount
+      state.message.action = 'decremented by'
+      state.message.amount = amount
     }
     const reset = () => {
-      state.counter = state.initCounter;
-      state.message.action = 'reset';
-      state.message.amount = null;
+      state.counter = state.initCounter
+      state.message.action = 'reset'
+      state.message.amount = null
     }
     const changedBy = computed(() => {
-      const { message } = state;
-      if (!message.action) return 'initialized';
-      return `${message?.action} ${message.amount ?? ''}`.trim();
+      const { message } = state
+      if (!message.action) return 'initialized'
+      return `${message?.action} ${message.amount ?? ''}`.trim()
     })
 
-    return {state, increment, decrement, reset, changedBy}
+    return { state, increment, decrement, reset, changedBy }
   }
 })
 </script>
