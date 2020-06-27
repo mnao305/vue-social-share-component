@@ -1,11 +1,10 @@
-import Vue, { PluginFunction, VueConstructor } from 'vue';
-
+import Vue, { PluginFunction, VueConstructor } from 'vue'
 
 interface InstallFunction extends PluginFunction<any> {
   installed?: boolean;
 }
 
-declare const VueSocialShareComponent: { install: InstallFunction };
-export default VueSocialShareComponent;
+declare const VueSocialShareComponent: { install: InstallFunction }
+export default VueSocialShareComponent
 
-export const VueSocialShareComponentSample: VueConstructor<Vue>;
+export const VueSocialShareComponentSample: VueConstructor<Vue>
