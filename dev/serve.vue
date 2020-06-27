@@ -1,17 +1,17 @@
 <script lang="ts">
 import Vue from 'vue'
-import { VueSocialShareComponentSample } from '@/entry'
+import { SocialShareComponent } from '@/entry'
 
 export default Vue.extend({
   name: 'ServeDev',
   components: {
-    VueSocialShareComponentSample,
+    SocialShareComponent,
   },
 })
 </script>
 
 <template>
   <div id="app">
-    <vue-social-share-component-sample />
+    <social-share-component />
   </div>
 </template>
