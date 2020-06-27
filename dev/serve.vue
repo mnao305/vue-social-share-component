@@ -1,13 +1,13 @@
 <script lang="ts">
-import Vue from 'vue';
-import { VueSocialShareComponentSample } from '@/entry';
+import Vue from 'vue'
+import { VueSocialShareComponentSample } from '@/entry'
 
 export default Vue.extend({
   name: 'ServeDev',
   components: {
     VueSocialShareComponentSample,
-  }
-});
+  },
+})
 </script>
 
 <template>

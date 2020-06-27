@@ -39,8 +39,8 @@ export default defineComponent({
       initCounter: 5,
       message: {
         action: null,
-        amount: null
-      }
+        amount: null,
+      },
     })
     const increment = (arg: Event | number) => {
       const amount = (typeof arg !== 'number') ? 1 : arg
@@ -66,7 +66,7 @@ export default defineComponent({
     })
 
     return { state, increment, decrement, reset, changedBy }
-  }
+  },
 })
 </script>
 
@@ -80,6 +80,7 @@ export default defineComponent({
     text-align: center;
     padding: 25px;
   }
+
   .vue-social-share-component-sample p {
     margin: 0 0 1em;
   }
