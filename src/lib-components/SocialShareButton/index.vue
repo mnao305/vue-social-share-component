@@ -38,16 +38,16 @@ export default defineComponent({
         url: 'https://twitter.com/intent/tweet?url={url}&text={text}',
       },
       facebook: {
-        text: '',
-        url: '',
+        text: 'Share',
+        url: 'https://www.facebook.com/sharer/sharer.php?u={url}',
       },
       hatena: {
-        text: '',
-        url: '',
+        text: 'Bookmark',
+        url: 'http://b.hatena.ne.jp/add?url={url}',
       },
       pocket: {
-        text: '',
-        url: '',
+        text: 'Pocket',
+        url: 'https://getpocket.com/edit?url={url}',
       },
     }
 

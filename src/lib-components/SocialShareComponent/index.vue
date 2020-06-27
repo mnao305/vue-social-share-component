@@ -5,6 +5,21 @@
       text="hogefugapiypiyo"
       service="twitter"
     />
+    <social-share-button
+      url="https://google.com"
+      text="hogefugapiypiyo"
+      service="facebook"
+    />
+    <social-share-button
+      url="https://google.com"
+      text="hogefugapiypiyo"
+      service="hatena"
+    />
+    <social-share-button
+      url="https://google.com"
+      text="hogefugapiypiyo"
+      service="pocket"
+    />
   </div>
 </template>
 
