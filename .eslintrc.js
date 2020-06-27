@@ -13,6 +13,7 @@ module.exports = {
 
   parserOptions: {
     ecmaVersion: 2020,
+    parser: '@typescript-eslint/parser',
   },
 
   rules: {
@@ -26,4 +27,17 @@ module.exports = {
       functions: 'never',
     }],
   },
+
+  overrides: [
+    {
+      files: [
+        '**/__tests__/*.{j,t}s?(x)',
+        '**/tests/unit/**/*.spec.{j,t}s?(x)',
+        '**/src/**/*.test.(js|ts)'
+      ],
+      env: {
+        jest: true,
+      },
+    }
+  ],
 }
