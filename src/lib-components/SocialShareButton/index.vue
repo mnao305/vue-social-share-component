@@ -6,7 +6,7 @@
   >
     <img
       class="social-share-icon"
-      src="./icons/twitter.svg"
+      :src="getImgSrc()"
     >
     {{ getText() }}
   </a>
@@ -65,7 +65,11 @@ export default defineComponent({
       return services[props.service].text
     }
 
-    return { getUrl, getText }
+    const getImgSrc = () => {
+      return require(`./icons/${props.service}.svg`)
+    }
+
+    return { getUrl, getText, getImgSrc }
   },
 })
 </script>
