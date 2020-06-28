@@ -12,7 +12,8 @@
     "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
     "commit": "git-cz",
-    "lint:style": "vue-cli-service lint:style"
+    "lint:style": "vue-cli-service lint:style",
+    "release": "standard-version"
   },
   "main": "dist/vue-social-share-component.ssr.js",
   "module": "dist/vue-social-share-component.esm.js",
@@ -63,6 +64,7 @@
     "rollup-plugin-vue": "^5.1.6",
     "sass": "^1.26.9",
     "sass-loader": "^8.0.2",
+    "standard-version": "^8.0.0",
     "stylelint-config-standard": "^18.2.0",
     "typescript": "^3.8.3",
     "vue": "^2.6.11",
