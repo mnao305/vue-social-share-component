@@ -1,23 +1,23 @@
 <template>
   <div>
     <social-share-button
-      url="https://google.com"
-      text="hogefugapiypiyo"
+      url="http://www.example.com"
+      text="test"
       service="twitter"
     />
     <social-share-button
-      url="https://google.com"
-      text="hogefugapiypiyo"
+      url="http://www.example.com"
+      text="test"
       service="facebook"
     />
     <social-share-button
-      url="https://google.com"
-      text="hogefugapiypiyo"
+      url="http://www.example.com"
+      text="test"
       service="hatena"
     />
     <social-share-button
-      url="https://google.com"
-      text="hogefugapiypiyo"
+      url="http://www.example.com"
+      text="test"
       service="pocket"
     />
   </div>
