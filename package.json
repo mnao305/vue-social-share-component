@@ -5,12 +5,12 @@
   "author": "mnao305",
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js && cp -R ./src/lib-components/SocialShareButton/icons ./dist",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
-    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es",
-    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs",
-    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife",
+    "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es && cp -R ./src/lib-components/SocialShareButton/icons ./dist",
+    "build:ssr": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format cjs && cp -R ./src/lib-components/SocialShareButton/icons ./dist",
+    "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife && cp -R ./src/lib-components/SocialShareButton/icons ./dist",
     "commit": "git-cz",
     "lint:style": "vue-cli-service lint:style",
     "release": "standard-version"
