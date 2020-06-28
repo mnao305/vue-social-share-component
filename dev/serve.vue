@@ -14,7 +14,10 @@ export default Vue.extend({
 <template>
   <div id="app">
     <h2>SocialShareComponent</h2>
-    <social-share-component />
+    <social-share-component
+      url="http://www.example.com"
+      text="test"
+    />
     <h2>SocialShareButton</h2>
     <h3>Twitter</h3>
     <social-share-button
