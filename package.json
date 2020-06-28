@@ -24,6 +24,14 @@
     "vue-social-share-component.d.ts",
     "src/**/*.vue"
   ],
+  "keywords": [
+    "vue",
+    "vue-component",
+    "vue-components",
+    "vuejs",
+    "vuejs-components",
+    "social-share"
+  ],
   "dependencies": {},
   "devDependencies": {
     "@ascendancyy/vue-cli-plugin-stylelint": "^1.1.2",
