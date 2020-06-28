@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.4](https://github.com/mnao305/vue-social-share-component/compare/v1.0.3...v1.0.4) (2020-06-28)
+
+
+### Code Refactoring
+
+* composition-apiを使わない形に変更 ([bb7e96a](https://github.com/mnao305/vue-social-share-component/commit/bb7e96a96094f6f70bfb399b9087d93f50cd37b9))
+
+
+### Docs
+
+* update readme ([c78f639](https://github.com/mnao305/vue-social-share-component/commit/c78f6392ee1cea3ccd42937221f0f273a160b8ae))
+
 ### [1.0.3](https://github.com/mnao305/vue-social-share-component/compare/v1.0.2...v1.0.3) (2020-06-28)
 
 
