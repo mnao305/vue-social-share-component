@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="social-share-component">
     <social-share-button
       url="http://www.example.com"
       text="test"
@@ -37,3 +37,11 @@ export default defineComponent({
   },
 })
 </script>
+
+<style lang="scss" scoped>
+.social-share-component {
+  @media screen and (min-width: 600px) {
+    display: flex;
+  }
+}
+</style>

@@ -79,7 +79,7 @@ export default defineComponent({
 .social-share-button {
   border: none;
   padding: 14px 40px;
-  display: inline;
+  display: block;
   position: relative;
   font-weight: bold;
   text-decoration: none;
