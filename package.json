@@ -81,7 +81,7 @@
     "vue": "^2.6.11"
   },
   "bugs": {
-    "url": "https://github.com/mnao305/vue-social-share-component"
+    "url": "https://github.com/mnao305/vue-social-share-component/issues"
   },
   "engines": {
     "node": ">=10"
