@@ -14,9 +14,9 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, PropType } from '@vue/composition-api'
+import Vue, { PropType } from 'vue'
 
-export default defineComponent({
+export default Vue.extend({
   name: 'SocialShareButton',
   props: {
     url: {
@@ -26,51 +26,53 @@ export default defineComponent({
     text: {
       type: String,
       required: false,
+      default: '',
     },
     service: {
       type: String as PropType<'twitter' | 'facebook' | 'hatena' | 'pocket'>,
       required: true,
     },
   },
-  setup (props) {
-    const services = {
-      twitter: {
-        text: 'Tweet',
-        url: 'https://twitter.com/intent/tweet?url={url}&text={text}',
-      },
-      facebook: {
-        text: 'Share',
-        url: 'https://www.facebook.com/sharer/sharer.php?u={url}',
-      },
-      hatena: {
-        text: 'Bookmark',
-        url: 'https://b.hatena.ne.jp/add?url={url}',
-      },
-      pocket: {
-        text: 'Pocket',
-        url: 'https://getpocket.com/edit?url={url}',
+  data () {
+    return {
+      services: {
+        twitter: {
+          text: 'Tweet',
+          url: 'https://twitter.com/intent/tweet?url={url}&text={text}',
+        },
+        facebook: {
+          text: 'Share',
+          url: 'https://www.facebook.com/sharer/sharer.php?u={url}',
+        },
+        hatena: {
+          text: 'Bookmark',
+          url: 'https://b.hatena.ne.jp/add?url={url}',
+        },
+        pocket: {
+          text: 'Pocket',
+          url: 'https://getpocket.com/edit?url={url}',
+        },
       },
     }
-
-    const urlReplace = (serviceUrl: string, url: string, text?: string) => {
+  },
+  methods: {
+    urlReplace (serviceUrl: string, url: string, text?: string) {
       let replacedUrl = serviceUrl.replace(/{url}/, encodeURIComponent(url))
       if (text) replacedUrl = replacedUrl.replace(/{text}/, encodeURIComponent(text))
       return replacedUrl
-    }
+    },
 
-    const getUrl = () => {
-      return urlReplace(services[props.service].url, props.url, props.text)
-    }
+    getUrl () {
+      return this.urlReplace(this.services[this.service].url, this.url, this.text)
+    },
 
-    const getText = () => {
-      return services[props.service].text
-    }
+    getText () {
+      return this.services[this.service].text
+    },
 
-    const getImgSrc = () => {
-      return require(`./icons/${props.service}.svg`)
-    }
-
-    return { getUrl, getText, getImgSrc }
+    getImgSrc () {
+      return require(`./icons/${this.service}.svg`)
+    },
   },
 })
 </script>

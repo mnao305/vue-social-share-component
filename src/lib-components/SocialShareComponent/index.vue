@@ -24,11 +24,14 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from '@vue/composition-api'
+import Vue from 'vue'
 import SocialShareButton from '../SocialShareButton/index.vue'
 
-export default defineComponent({
+export default Vue.extend({
   name: 'SocialShareComponent',
+  components: {
+    SocialShareButton,
+  },
   props: {
     url: {
       type: String,
@@ -38,9 +41,6 @@ export default defineComponent({
       type: String,
       required: true,
     },
-  },
-  components: {
-    SocialShareButton,
   },
 })
 </script>

@@ -1,11 +1,7 @@
 import _Vue, { PluginFunction } from 'vue'
 
-import VueCompositionAPI from '@vue/composition-api'
-
 // Import vue components
 import * as components from '@/lib-components/index'
-
-_Vue.use(VueCompositionAPI)
 
 // Define typescript interfaces for autoinstaller
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
