@@ -1,6 +1,7 @@
 <template>
   <a
-    class="social-share-button twitter"
+    class="social-share-button"
+    :class="service"
     :href="getUrl()"
     target="_blank"
   >
@@ -78,7 +79,6 @@ export default defineComponent({
 .social-share-button {
   border: none;
   padding: 14px 40px;
-  border-radius: 5px;
   display: inline;
   position: relative;
   font-weight: bold;
@@ -94,8 +94,20 @@ export default defineComponent({
     background-color: #1da1f2;
   }
 
-  &.twitter:hover {
-    background-color: #1397d8;
+  &.facebook {
+    background-color: #1877f2;
+  }
+
+  &.hatena {
+    background-color: #00a4de;
+  }
+
+  &.pocket {
+    background-color: #ef3f56;
+  }
+
+  &:hover {
+    opacity: 0.8;
   }
 }
 </style>
