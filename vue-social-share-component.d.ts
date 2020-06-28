@@ -7,4 +7,5 @@ interface InstallFunction extends PluginFunction<any> {
 declare const VueSocialShareComponent: { install: InstallFunction }
 export default VueSocialShareComponent
 
-export const VueSocialShareComponentSample: VueConstructor<Vue>
+export const SocialShareComponent: VueConstructor<Vue>
+export const SocialShareButton: VueConstructor<Vue>
