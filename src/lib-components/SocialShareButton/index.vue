@@ -43,7 +43,7 @@ export default defineComponent({
       },
       hatena: {
         text: 'Bookmark',
-        url: 'http://b.hatena.ne.jp/add?url={url}',
+        url: 'https://b.hatena.ne.jp/add?url={url}',
       },
       pocket: {
         text: 'Pocket',
