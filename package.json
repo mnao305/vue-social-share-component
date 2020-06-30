@@ -13,7 +13,9 @@
     "build:unpkg": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format iife && cp -R ./src/lib-components/SocialShareButton/icons ./dist",
     "commit": "git-cz",
     "lint:style": "vue-cli-service lint:style",
-    "release": "standard-version"
+    "release": "standard-version",
+    "storybook:build": "vue-cli-service storybook:build",
+    "storybook:serve": "vue-cli-service storybook:serve -p 6006"
   },
   "main": "dist/vue-social-share-component.ssr.js",
   "module": "dist/vue-social-share-component.esm.js",
@@ -23,14 +25,6 @@
     "dist/*",
     "vue-social-share-component.d.ts",
     "src/**/*.vue"
-  ],
-  "keywords": [
-    "vue",
-    "vue-component",
-    "vue-components",
-    "vuejs",
-    "vuejs-components",
-    "social-share"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -43,6 +37,12 @@
     "@rollup/plugin-alias": "^2.2.0",
     "@rollup/plugin-commonjs": "^11.1.0",
     "@rollup/plugin-replace": "^2.3.2",
+    "@storybook/addon-actions": ">=5.3.0",
+    "@storybook/addon-docs": ">=5.3.0",
+    "@storybook/addon-knobs": ">=5.3.0",
+    "@storybook/addon-links": ">=5.3.0",
+    "@storybook/addon-notes": ">=5.3.0",
+    "@storybook/vue": ">=5.3.0",
     "@types/jest": "^24.0.19",
     "@typescript-eslint/eslint-plugin": "^2.33.0",
     "@typescript-eslint/parser": "^2.34.0",
@@ -75,6 +75,7 @@
     "stylelint-config-standard": "^18.2.0",
     "typescript": "^3.8.3",
     "vue": "^2.6.11",
+    "vue-cli-plugin-storybook": "^1.2.2",
     "vue-template-compiler": "^2.6.11"
   },
   "peerDependencies": {
@@ -95,6 +96,14 @@
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
     }
   },
+  "keywords": [
+    "vue",
+    "vue-component",
+    "vue-components",
+    "vuejs",
+    "vuejs-components",
+    "social-share"
+  ],
   "license": "MIT",
   "lint-staged": {
     "*.{js,jsx,vue,ts,tsx}": [
