@@ -2,6 +2,8 @@
 
 > This is a component that makes it easy to implement social sharing in Vue.js.
 
+[DEMO](https://vue-social-share-component.vercel.app/)
+
 ## Installation
 
 ```bash
