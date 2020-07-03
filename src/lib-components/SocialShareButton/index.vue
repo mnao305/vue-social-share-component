@@ -88,13 +88,14 @@ export default Vue.extend({
   text-decoration: none;
   color: white;
   text-align: center;
+  font-size: 18px;
 
   @media screen and (min-width: 600px) {
     display: inline-block;
   }
 
   .social-share-icon {
-    height: 20px;
+    height: 16px;
   }
 
   &.twitter {
