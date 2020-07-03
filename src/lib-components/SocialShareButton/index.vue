@@ -80,13 +80,18 @@ export default Vue.extend({
 <style lang="scss" scoped>
 .social-share-button {
   border: none;
-  padding: 14px 40px;
+  padding: 14px 0;
+  min-width: 200px;
   display: block;
   position: relative;
   font-weight: bold;
   text-decoration: none;
   color: white;
   text-align: center;
+
+  @media screen and (min-width: 600px) {
+    display: inline-block;
+  }
 
   .social-share-icon {
     height: 20px;
