@@ -2,6 +2,26 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [1.1.0](https://github.com/mnao305/vue-social-share-component/compare/v1.0.4...v1.1.0) (2020-07-03)
+
+
+### Features
+
+* アイコンと文字サイズの調整 ([8fbdf1b](https://github.com/mnao305/vue-social-share-component/commit/8fbdf1b916fbbb956053b9f6597890a1c388a3a2))
+* ボタンの横幅を揃える感じにする ([8c18be7](https://github.com/mnao305/vue-social-share-component/commit/8c18be727756c77143c6604fb644b02bf405e434))
+
+
+### Others
+
+* issuesのurlを修正 ([ebeb5f1](https://github.com/mnao305/vue-social-share-component/commit/ebeb5f124e4198830cecd99efb7ed3eee6f21e6a))
+* keywordの追加 ([bf308e4](https://github.com/mnao305/vue-social-share-component/commit/bf308e4bc16faa645b6bcde3e80b8d2eec56edcf))
+* storybookを導入 ([d9852d3](https://github.com/mnao305/vue-social-share-component/commit/d9852d33eb911fc60776c3ee5b020a271ae1174d))
+
+
+### Docs
+
+* update readme ([0f5f756](https://github.com/mnao305/vue-social-share-component/commit/0f5f756313395e5bd52ebcbf3af5ffeef489d6f5))
+
 ### [1.0.4](https://github.com/mnao305/vue-social-share-component/compare/v1.0.3...v1.0.4) (2020-06-28)
 
 
