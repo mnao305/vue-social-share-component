@@ -1,6 +1,10 @@
 # vue-social-share-component
 
+![image](https://user-images.githubusercontent.com/32170530/86668817-f84bcd00-c02d-11ea-9883-ce78bfaf5ebc.png)
+
 > This is a component that makes it easy to implement social sharing in Vue.js.
+
+[![npm version](https://badge.fury.io/js/vue-social-share-component.svg)](https://badge.fury.io/js/vue-social-share-component)
 
 [DEMO](https://vue-social-share-component.vercel.app/?path=/docs/socialsharecomponent--default)
 
