@@ -19,7 +19,7 @@ npm i vue-social-share-component
 ```vue
 <template>
   <div>
-    <social-share-component service="twitter" url="example.com" text="test text message" />
+    <social-share-component url="example.com" text="test text message" />
   </div>
 </template>
 
