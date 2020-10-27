@@ -71,7 +71,7 @@ export default Vue.extend({
     },
 
     getImgSrc () {
-      return require(`./icons/${this.service}.png`)
+      return `/icons/${this.service}.png`
     },
   },
 })
