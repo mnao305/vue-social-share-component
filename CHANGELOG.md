@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.3](https://github.com/mnao305/vue-social-share-component/compare/v1.1.2...v1.1.3) (2020-10-27)
+
+
+### Build System
+
+* ビルドコマンド修正するの忘れてた ([58f5b1b](https://github.com/mnao305/vue-social-share-component/commit/58f5b1be2c37573acd8243b35b162f916ff8e89f))
+
 ### [1.1.2](https://github.com/mnao305/vue-social-share-component/compare/v1.1.1...v1.1.2) (2020-10-27)
 
 
