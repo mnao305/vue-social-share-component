@@ -5,7 +5,7 @@
   "author": "mnao305",
   "scripts": {
     "serve": "vue-cli-service serve dev/serve.ts",
-    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js && cp -R ./public/icons ./dist",
+    "build": "cross-env NODE_ENV=production rollup --config build/rollup.config.js && cp -R ./src/lib-components/SocialShareButton/icons ./dist",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint",
     "build:es": "cross-env NODE_ENV=production rollup --config build/rollup.config.js --format es && cp -R ./src/lib-components/SocialShareButton/icons ./dist",
