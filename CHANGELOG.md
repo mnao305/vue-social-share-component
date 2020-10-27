@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.1.1](https://github.com/mnao305/vue-social-share-component/compare/v1.1.0...v1.1.1) (2020-10-27)
+
+
+### Bug Fixes
+
+* 画像をpng形式に変更 ([154b181](https://github.com/mnao305/vue-social-share-component/commit/154b1817e78c0b7ed3c9eb51c2389313821a04de))
+
+
+### Docs
+
+* fix sample code ([cc71cae](https://github.com/mnao305/vue-social-share-component/commit/cc71cae24a9855e5987b461a48e7e51ed5e0082f))
+* update readme ([6a8fcbb](https://github.com/mnao305/vue-social-share-component/commit/6a8fcbbc0175880ccb0978a6b7daa6777ac14234))
+* update readme ([6c6e052](https://github.com/mnao305/vue-social-share-component/commit/6c6e05257589eb23ed5ae5249a782414d743cc42))
+
 ## [1.1.0](https://github.com/mnao305/vue-social-share-component/compare/v1.0.4...v1.1.0) (2020-07-03)
 
 
